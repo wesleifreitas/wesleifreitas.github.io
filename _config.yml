@@ -65,7 +65,7 @@ bing_verify:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Sao_Paulo
 future:      true
-highlighter: pygments
+highlighter: pygmentize
 markdown:    kramdown
 gems:
   - jekyll-sitemap
@@ -77,6 +77,8 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
+# https://teamtreehouse.com/community/jekyllpaginate-gem
+gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/blog/page:num"
 
@@ -85,7 +87,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: true
 
   coderay:
     coderay_line_numbers: nil
