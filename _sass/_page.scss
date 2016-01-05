@@ -483,14 +483,14 @@ ul.social-buttons li a:active {
 		vertical-align: middle;
 		margin: 0 auto;
 		text-align: center;
-	}
+	}	
 	h1 {
 		font-weight: 700;
-		margin-bottom: 20px;
+		margin-bottom: 20px;		
 		@include font-rem(32);
 		color: $white;
-		text-shadow: 1px 1px 4px rgba($base-color, 0.6);
-		display: none;
+		text-shadow: 1px 1px 4px rgba($base-color, 0.6);		
+		display: none;		
 		a {
 			color: $white;
 		}
@@ -647,7 +647,7 @@ ul.social-buttons li a:active {
 		}
 	}
 }
-.img-circle {
+.img-profile {
     border-radius: 50%;
 }
 .justify {
