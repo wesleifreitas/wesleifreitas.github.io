@@ -28,7 +28,8 @@ body {
 }
 
 .entry-date {
-	color: $white;
+	/*color: $white;*/
+	color: #D4CCD4;
 }
 ///sections
 
@@ -60,7 +61,10 @@ body {
 		color: lighten($base-color,20);
 	}
 }
-
+.content-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 // Feature Image Caption
 .image-credit {
@@ -99,7 +103,7 @@ body {
 	}
 	.vcard {
 		&:before {
-			content: " by ";
+			content: " por ";
 		}
 	}
 	.tag {
@@ -259,8 +263,8 @@ header .entry-meta {
 	}
 }
 .author-img {
-	width: 150px;
-	height: 150px;
+	/*width: 150px;
+	height: 150px;*/
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -398,6 +402,17 @@ ul.social-buttons li a:active {
 	a {
 		color: lighten($text-color,20);
 	}
+}
+.footer .copyright {
+    -webkit-opacity: 0.8;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+.footer .fa-heart {
+    color: #fb866a;
+}
+small, .small{
+	font-size: 85%;
 }
 
 // Social Share
@@ -651,10 +666,4 @@ ul.social-buttons li a:active {
 		}
 	}
 }
-.img-profile {
-    border-radius: 50%;
-}
-.justify {
-    text-align: justify;
-    text-justify: inter-word;
-}
+
