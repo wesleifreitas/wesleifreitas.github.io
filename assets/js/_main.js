@@ -91,6 +91,6 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("body").floatingSocialShare({
     buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
-    text: "Share with "
+    text: "Compartilhar com "
   });
 });
