@@ -15,6 +15,9 @@ body {
 		word-wrap: break-word;
 	}
 }
+.hentry-dark {
+	background-color: $header-color;
+}
 .entry-content {
 	@include font-size(16);
 	// Dotted line underlines for links
@@ -28,9 +31,9 @@ body {
 }
 
 .entry-date {
-	/*color: $white;*/
-	color: #D4CCD4;
+	color: $white;
 }
+
 ///sections
 
 .content-header-title {
@@ -61,10 +64,7 @@ body {
 		color: lighten($base-color,20);
 	}
 }
-.content-justify {
-    text-align: justify;
-    text-justify: inter-word;
-}
+
 
 // Feature Image Caption
 .image-credit {
@@ -263,8 +263,8 @@ header .entry-meta {
 	}
 }
 .author-img {
-	/*width: 150px;
-	height: 150px;*/
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -402,14 +402,14 @@ ul.social-buttons li a:active {
 	a {
 		color: lighten($text-color,20);
 	}
-}
-.footer .copyright {
-    -webkit-opacity: 0.8;
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-}
-.footer .fa-heart {
-    color: #fb866a;
+	.copyright {
+	    -webkit-opacity: 0.8;
+	    -moz-opacity: 0.8;
+	    opacity: 0.8;
+	}
+	.fa-heart {
+    	color: #fb866a;
+	}
 }
 small, .small{
 	font-size: 85%;
@@ -475,9 +475,12 @@ small, .small{
 	position: relative;
 	width: 100%;
 	height: 100%;
-	min-height: 300px;
 	overflow: hidden;
-	background-color: $header-color;
+	height: 50px;
+	@media #{$medium} {
+		background-color: $header-color;
+		min-height: 300px;
+	}
 }
 .header-toggle{
 	display: block;
@@ -498,19 +501,16 @@ small, .small{
 		vertical-align: middle;
 		margin: 0 auto;
 		text-align: center;
-	}	
+	}
 	h1 {
 		font-weight: 700;
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
 		@include font-rem(32);
 		color: $white;
-		text-shadow: 1px 1px 4px rgba($base-color, 0.6);		
-		/*display: none;*/
+		text-shadow: 1px 1px 4px rgba($base-color, 0.6);
+		display: block;
 		a {
 			color: $white;
-		}
-		@media #{$medium} {
-			display: block;
 		}
 		@media #{$medium} {
 			@include font-rem(26);
@@ -531,10 +531,10 @@ small, .small{
 }
 .header-menu {
 	position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $menu-height;
 	z-index: 20;
 	ul {
 		margin: 0 auto;
@@ -548,6 +548,7 @@ small, .small{
 }
 .header-menu-top{
 	background-color: $menu-top;
+	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
 }
 
 .header-menu-overflow{
@@ -573,22 +574,28 @@ small, .small{
 	padding-left: 20px;
 	padding-right: 20px;
 	border-top-color: transparent;
-  border-top-style: solid;
-  border-top-width: 5px;
-  box-sizing: border-box;
+	border-top-style: solid;
+	border-top-width: 5px;
+	box-sizing: border-box;
+
+	a {
+		vertical-align: middle;
+		display: table-cell;
+		height: $menu-height - 2;
+	}
 }
 ///sections
 .logo{
-  	width: 50px;
-	height: 50px;
-	margin-top: 10px;
-  	float: left;
-  	display: none;
-	@media #{$medium}{
-			display: block;
-	}
+  width: $menu-height;
+  height: $menu-height;
+  float: left;
+  padding: 10px;
+}
+.header-item-container{
+	height: 100%;
 }
 .header-item{
+	height: 100%;
 	display: none;
 	@media #{$large} {
 		display: block;
@@ -597,12 +604,15 @@ small, .small{
 .header-item-title{
 	float: left;
 	border-top-width: 0px;
-	h2.title {
-		float: left;
-	  	padding-left: 5px;
+	height: 100%;
+	a.title {
+		font-size: 1.5rem;
+	    padding-left: 5px;
 		display: none;
+		vertical-align: middle;
+		height: $menu-height - 2;
 		@media #{$medium}{
-			display: block;
+			display: table-cell;
 		}
 	}
 }
@@ -612,20 +622,18 @@ small, .small{
   border-top-color: $header-margin;
 }
 
-.header-item .header-submenu{
-	display: none;
-}
-
 .header-item:hover .header-submenu{
 	display: block;
 	position: absolute;
 }
 
 .header-submenu {
+	display: none;
 	border-top: 2px solid $header-margin;
 	width: 200px;
 	z-index: 100;
 	list-style-type: none;
+	transform: translateX(-25%);
 }
 
 .sub-item {
@@ -633,23 +641,25 @@ small, .small{
 	padding-left: 10px;
 	width: 100%;
 	border-bottom: 1px solid gray;
+	border-left: 1px solid;
 	height: 50px;
 	text-decoration: none;
 }
 
 .sub-item a{
 	vertical-align: middle;
-  display: table-cell;
-  height: 50px;
+	display: table-cell;
+	height: 50px;
 }
 .sub-item:hover {
 	border-bottom-color: $header-margin;
+	border-left-color: $header-margin;
 }
 
 .button-twitter {
 	color: $white;
 	position: fixed;
-	margin-top: 15px;
+	margin-top: $menu-height / 2 - 20;
 	margin-right: 10px;
 	top: 0;
 	right: 0;
@@ -666,4 +676,3 @@ small, .small{
 		}
 	}
 }
-

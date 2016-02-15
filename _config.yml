@@ -1,19 +1,30 @@
 title:            wesleifreitas.github.io
-description:      
-disqus_shortname: wesleifreitas
-reading_time:     true
+description:      Describe your website here.
+disqus_shortname: wesleifreitas # put your disqus here
+reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             images/logo.png
+logo:             images/logo.png # logo visible in the topbar
 profile_picture:  images/weslei.png
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 # url: http://aronbordin.com/neo-hpstr-jekyll-theme
 
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
 menu:
- # - title: 'Blog'
- #   url: '/blog'
   - title: 'Sobre'
     url: '/'
+ # - title: 'Blog'
+ #   url: '/blog'
+ # - title: 'Blog'
+ #   url: '/blog'
+ # - title: 'Fork'
+ #   url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+ # - title: 'Install'
+ #   url: '/theme-setup/'
  # - title: 'Tags'
  #   url: '/tags'
  # - title: 'Categories'
@@ -22,10 +33,10 @@ menu:
  # - title: 'Favorites'
  #   url: '#'
  #   submenu:
- #     - title: 'highlighter'
- #       url: '/code-highlighting-post/'
- #     - title: 'intro'
- #       url: '/readability-post/'
+ #     - title: 'Code Highlighter'
+ #       url: '/intro/code-highlighting-post/'
+ #     - title: 'Sample Post'
+ #       url: '/intro/sample-post/'
 
 # Owner/author information
 owner:
@@ -33,9 +44,9 @@ owner:
   site:           http://wesleifreitas.github.io
   avatar:         images/avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  email:          weslei.rfreitas@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter: weslei_rfreitas
+  twitter: weslei_rfreitas # if no twitter in this config, the twitter follow button will be removed
   facebook:
   github: wesleifreitas
   stackexchange:
@@ -44,15 +55,15 @@ owner:
   flickr:
   tumblr:
   # google plus id, include the '+', eg +AronBordin
-  google_plus:    +yourid
+  #google_plus:    +yourid
 
 social:
   - title: "github"
     url: "https://github.com/wesleifreitas"
   - title: "linkedin"
     url: "https://br.linkedin.com/in/wesleifreitas"
-  - title: "youtube"
-    url: "https://www.youtube.com"
+ # - title: "youtube"
+ #   url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
 # Background image to be tiled on all pages
 background:
 
@@ -63,7 +74,7 @@ google_verify:
 bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Sao_Paulo
+timezone:    America/New_York
 future:      true
 highlighter: rouge
 markdown:    kramdown
@@ -77,24 +88,26 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-# https://teamtreehouse.com/community/jekyllpaginate-gem
-gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/blog/page:num"
+
+# if true, shows the floatting share buttons
+float_share: true
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  syntax_highlighter: true
+  enable_coderay: true
 
-  syntax_highlighter_opts:
-    line_numbers: nil
-    line_numbers_start: 1
-    tab_width: 4
-    bold_every: 10
-    css: class
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+gems: [jekyll-paginate]
