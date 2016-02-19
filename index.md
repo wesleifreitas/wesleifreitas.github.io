@@ -4,6 +4,7 @@ title: "wesleifreitas.github.io"
 description: ""
 tags: [about, author]
 comments: false
+modified: 2016-02-16
 ---
 
 <div class="read-more" ng-cloak>
@@ -55,6 +56,7 @@ comments: false
       <div flex="20" flex-xs="50">JavaScript</div>
       <div flex="20" flex-xs="50">Jekyll</div>
       <div flex="20" flex-xs="50">Node.js <i class="fa fa-book"></i></div>
+      <div flex="20" flex-xs="50">MongoDB <i class="fa fa-book"></i></div>      
       <div flex="20" flex-xs="50">Python <i class="fa fa-book"></i></div>
       <div flex="20" flex-xs="50">Ruby <i class="fa fa-book"></i></div>
       <div flex="20" flex-xs="50">SQL</div>
@@ -69,4 +71,28 @@ comments: false
       </md-whiteframe>
      </div>
   </div>
+  <!--
+  <footer class="entry-meta">
+    {% if page.modified %}<span>Atualizado em <span class=""><time datetime="{{ page.modified }}">          
+      {% assign m = page.modified | date: "%-m" %}            
+      {{ page.modified | date: "%-d" }}
+      {% case m %}
+        {% when '1' %}Janeiro
+        {% when '2' %}Fevereiro
+        {% when '3' %}Março
+        {% when '4' %}Abril
+        {% when '5' %}Maio
+        {% when '6' %}Junnho
+        {% when '7' %}Julho
+        {% when '8' %}Agosto
+        {% when '9' %}Setembro
+        {% when '10' %}Outubro
+        {% when '11' %}Novembro
+        {% when '12' %}Dezembro
+      {% endcase %}
+      {{ page.modified | date: "%Y" }}
+    </time></span></span>
+    <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}        
+  </footer>
+  -->
 </div>
