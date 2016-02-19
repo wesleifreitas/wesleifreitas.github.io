@@ -51,7 +51,25 @@
     <div class="header-title-wrap">
       <h1>{{ page.title }}</h1>
       {% if page.date %}
-        <h2><span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span></h2>
+        <h2><span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">          
+          {% assign m = page.date | date: "%-m" %}            
+          {{ page.date | date: "%-d" }}          
+          {% case m %}
+            {% when '1' %}Janeiro
+            {% when '2' %}Fevereiro
+            {% when '3' %}Março
+            {% when '4' %}Abril
+            {% when '5' %}Maio
+            {% when '6' %}Junnho
+            {% when '7' %}Julho
+            {% when '8' %}Agosto
+            {% when '9' %}Setembro
+            {% when '10' %}Outubro
+            {% when '11' %}Novembro
+            {% when '12' %}Dezembro
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+        </time></span></h2>
       {% else %}
         <h2><span class="entry-date"><time>&nbsp;</time></span></h2>
       {% endif %}
@@ -60,7 +78,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           {% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
-          Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+          Tempo de leitura ~{% if readtime <= 1 %}1 minuto{% else %}{{ readtime }} minutos{% endif %}
         </p><!-- /.entry-reading-time -->
       {% else %}
           <p class="entry-reading-time">
