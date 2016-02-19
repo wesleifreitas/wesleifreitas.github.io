@@ -15,10 +15,10 @@ profile_picture:  images/weslei.png
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Sobre'
+  - title: 'Sobre o autor'
     url: '/'
- # - title: 'Blog'
- #   url: '/blog'
+  - title: 'Blog'
+    url: '/blog'
  # - title: 'Blog'
  #   url: '/blog'
  # - title: 'Fork'

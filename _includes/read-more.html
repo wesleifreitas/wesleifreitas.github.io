@@ -1,18 +1,36 @@
 <div class="read-more">
   {% for post in site.related_posts limit:1 %}
     <div class="read-more-header">
-      <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn">Read More</a>
+      <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn">Leia mais</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
       <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-      <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %} <a href="{{ site.url }}{{ post.url }}">Continue reading</a></p>
+      <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %} <a href="{{ site.url }}{{ post.url }}">Continuar lendo</a></p>
     </div><!-- /.read-more-content -->
   {% endfor %}
   <div class="read-more-list">
     {% for post in site.related_posts limit:2 offset:1 %}
       <div class="list-item">
         <h4><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-        <span>Published on {{ post.date | date: "%B %d, %Y" }}</span>
+        <span>Publicado em 
+          {% assign m = post.date | date: "%-m" %}            
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Janeiro
+            {% when '2' %}Fevereiro
+            {% when '3' %}Março
+            {% when '4' %}Abril
+            {% when '5' %}Maio
+            {% when '6' %}Junnho
+            {% when '7' %}Julho
+            {% when '8' %}Agosto
+            {% when '9' %}Setembro
+            {% when '10' %}Outubro
+            {% when '11' %}Novembro
+            {% when '12' %}Dezembro
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </span>
       </div><!-- /.list-item -->
     {% endfor %}
   </div><!-- /.read-more-list -->

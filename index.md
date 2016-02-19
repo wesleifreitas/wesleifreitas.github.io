@@ -70,7 +70,7 @@ modified: 2016-02-16
         <span><small><i class="fa fa-book"></i> Em estudo, adquirindo experiência.</small></span>
       </md-whiteframe>
      </div>
-  </div>
+  </div> 
   <!--
   <footer class="entry-meta">
     {% if page.modified %}<span>Atualizado em <span class=""><time datetime="{{ page.modified }}">          
@@ -94,5 +94,5 @@ modified: 2016-02-16
     </time></span></span>
     <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}        
   </footer>
-  -->
+  -->  
 </div>
