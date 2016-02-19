@@ -22,7 +22,8 @@ PostCtrl.$inject = ['$scope'];
 function PostCtrl($scope) {
 
 	$scope.jekyllAngular = {
-		example: '[[name]]'
+		example: '[[name]]',
+		colchetes: '[[colchetes]]'
 	};
 }
 // Post Controller - END
