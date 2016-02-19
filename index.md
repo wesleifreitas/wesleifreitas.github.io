@@ -67,7 +67,7 @@ modified: 2016-02-16
     </div>   
     <div layout="row" flex="100" layout-padding layout-wrap layout-fill>
       <md-whiteframe class="md-whiteframe-1dp" flex="100" layout layout-align="center center">
-        <span><small><i class="fa fa-book"></i> Em estudo, adquirindo expirência.</small></span>
+        <span><small><i class="fa fa-book"></i> Em estudo, adquirindo experiência.</small></span>
       </md-whiteframe>
      </div>
   </div>
