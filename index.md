@@ -15,7 +15,7 @@ modified: 2016-02-16
     <h3>{{site.owner.name}}</h3>
     <div class="author-container">
       <img class="author-img" src="{{site.url}}/{{site.owner.avatar}}" alt="{{site.owner.name}}" />
-      <div class="author-bio">{{site.owner.bio}}</div>
+      <div class="author-bio">{{site.owner.bio_about}}</div>
     </div>
     <div class="author-share">
       <ul class="list-inline social-buttons">
@@ -38,7 +38,7 @@ modified: 2016-02-16
 		  <p class="content-justify"><strong>Atualmente tem se dedicado com JavaScript Projects!</strong></p>
     </div>
     <h2>Conhecimentos</h2>
-    <div layout="row" layout-align="start" layout-wrap layout-padding>      
+    <div layout="row" layout-align="start" layout-wrap layout-padding>
       <div flex="20" flex-xs="50">AS3</div>
       <div flex="20" flex-xs="50">Angular JS</div>
       <div flex="20" flex-xs="50">Angular Material</div>
@@ -56,7 +56,8 @@ modified: 2016-02-16
       <div flex="20" flex-xs="50">JavaScript</div>
       <div flex="20" flex-xs="50">Jekyll</div>
       <div flex="20" flex-xs="50">Node.js <i class="fa fa-book"></i></div>
-      <div flex="20" flex-xs="50">MongoDB <i class="fa fa-book"></i></div>      
+      <div flex="20" flex-xs="50">MongoDB <i class="fa fa-book"></i></div>
+      <div flex="20" flex-xs="50">MEAN.IO <i class="fa fa-book"></i></div>
       <div flex="20" flex-xs="50">Python <i class="fa fa-book"></i></div>
       <div flex="20" flex-xs="50">Ruby <i class="fa fa-book"></i></div>
       <div flex="20" flex-xs="50">SQL</div>

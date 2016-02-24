@@ -43,7 +43,8 @@ owner:
   name:           Weslei Freitas
   site:           http://wesleifreitas.github.io
   avatar:         images/avatar.jpg
-  bio:            "Olá! Sou Full-Stack Developer, gosto de trabalhar em equipe e aprender novas tecnologias."
+  bio:            "<p>Olá! Sou Full-Stack Developer, gosto de trabalhar em equipe e aprender novas tecnologias.<p/><p><a href='/'>Mais sobre o autor...</a><p>"
+  bio_about:      "<p>Olá! Sou Full-Stack Developer, gosto de trabalhar em equipe e aprender novas tecnologias.</p><p><a href='/blog'>Blog</a></p>"
   email:          weslei.rfreitas@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: weslei_rfreitas # if no twitter in this config, the twitter follow button will be removed
