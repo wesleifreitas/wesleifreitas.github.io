@@ -67,10 +67,7 @@ modified: 2016-02-16
      <p>
        {% if site.owner.github %}
           <a aria-label="Seguir @{{site.owner.github}} on GitHub" data-style="mega" href="https://github.com/{{site.owner.github}}" class="github-button">Seguir @{{site.owner.github}}</a>
-        {% endif %}
-        {% if site.owner.twitter %}
-          <a href="https://twitter.com/{{site.owner.twitter}}" class="twitter-follow-button" data-show-count="false" data-size="large" data-lang="pt">Seguir @{{site.owner.twitter}}</a>
-        {% endif %}
+        {% endif %}        
       </p>
   </div> 
   <!--
