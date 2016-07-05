@@ -27,7 +27,10 @@ Está afim de jogar jogos antigos? Neste post irei demostrar como criar um conso
 
 <i class="fa fa-smile-o" aria-hidden="true"></i> *Estes itens são facilmente encontrados no mercado livre.*
 
-## Passo a passo <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-gamepad" aria-hidden="true"></i>
+Tudo pronto? Então siga as instruções a seguir.
+
+<h2 align="center">
+Passo a passo <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-gamepad" aria-hidden="true"></i></h2>
 
 ### 1. Baixar o último release do recalboxOS
 
@@ -37,10 +40,11 @@ Faça o download [aqui](https://github.com/recalbox/recalbox-os/releases)!
 
 Utilize um software para formatar mídia, ex.: [SD Formatter](https://www.sdcard.org/downloads/formatter_4/) para Windows e MacOSX, ou gparted no linux.
 
-* Inicie o programa de formatação de cartão de memória e formate todo o cartão em FAT32
-* Extraia o conteúdo do arquivo baixado diretamente na raiz do seu cartão de memória
-* Encaixe o cartão de memória no Raspberry Pi, conecte o cabo HDMI e a fonte de energia
-* A instalação se iniciará e voce terá um recalbox em alguns minutos
+* Inicie o programa de formatação de cartão de memória e formate todo o cartão em FAT32;
+* Extraia o conteúdo do arquivo baixado diretamente na raiz do seu cartão de memória;
+* Monte o case no seu Raspberry (opcional);
+* Encaixe o cartão de memória no Raspberry Pi, conecte o cabo HDMI e a fonte de energia;
+* A instalação se iniciará e voce terá um recalbox rodando em alguns minutos.
 
 Quando iniciar o Recalbox você deverá ver sua interface gráfica:
 
@@ -73,4 +77,42 @@ Volte para a tela de configuração, atribua o controle para um jogador. Pronto,
 
 ### 4. Adicionar jogos
 
-[...]
+Conecte o Raspberry a sua rede local (Utilize o cabo ou configure o WIFI no recalboxOS).
+Depois em seu computador, acesse Redes no Windows Explorer e selecione o Recalbox ou digite `\\RECALBOX` na barra de endereço.
+
+[IMG]
+
+
+*Nota: Você pode verificar o IP nas opções de rede no recalboxOS e acessar por ele, por exemplo `\\192.168.1.10`.*
+
+
+Depois abra a pasta `share`, em seguida `roms`. Por fim, cole seus jogos na pasta do seu respectivo emulador.
+
+**— Enjoy!**
+
+## Extras
+
+Veja como ficou o meu console retrô a seguir.
+
+[IMG]
+
+**Obs.:** Eu configurei minha rede WIFI direto no arquivo **recalbox/share/system/recalbox.conf**, não esqueça de remover o `;` do início da linha alterada:
+<div>
+	# ------------ B - Network ------------ #
+	<br>## >Set system hostname
+	<br>system.hostname=RECALBOX
+	<br>## Activate wifi (0,1)
+	<br>wifi.enabled=<b>1</b>
+	<br>## Wifi SSID (string)
+	<br>wifi.ssid=<b>meuWifi</b>
+	<br>## Wifi KEY (string)
+	<br>wifi.key=<b>minhaSenha</b>
+</div>
+
+### Mais informações:
+
+* **Site oficial do recalboxOS :** [http://www.recalbox.com/](http://www.recalbox.com/)
+* **Manuais (wiki) do recalboxOS :** [https://github.com/recalbox/recalbox-os/wiki/](https://github.com/recalbox/recalbox-os/wiki)
+
+
+**That´s all folks!** <i class="fa fa-thumbs-o-up"></i>
