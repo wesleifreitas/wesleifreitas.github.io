@@ -15,19 +15,37 @@ Está afim de jogar jogos antigos? Neste post irei demostrar como criar um conso
 
 ## O que é necessário para criar este precioso brinquedinho?
 
+<hr>
 <figure class="half">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<figcaption>item 1, item 2, [...].</figcaption>
+	<!-- <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a> -->
+	<a href="/images/respberry-console-retro/raspberry-pi-3.jpg">
+		<img src="/images/respberry-console-retro/raspberry-pi-3.jpg" alt="">
+	</a>	
+	<a href="/images/respberry-console-retro/fonte-5v-2a-micro-usb-raspberry-pi-b-raspberry-pi3-pi-3">
+		<img src="/images/respberry-console-retro/fonte-5v-2a-micro-usb-raspberry-pi-b-raspberry-pi3-pi-3.jpg" alt="">
+	</a>
+	<a href="/images/respberry-console-retro/micro-sd.jpg">
+		<img src="/images/respberry-console-retro/micro-sd.jpg" alt="">
+	</a>	
+	<a href="/images/respberry-console-retro/cabo-hdmi.jpg">
+		<img src="/images/respberry-console-retro/cabo-hdmi.jpg" alt="">
+	</a>
+	<a href="/images/respberry-console-retro/controle-ps3.jpg">
+		<img src="/images/respberry-console-retro/controle-ps3.jpg" alt="">
+	</a>
+	<a href="/images/respberry-console-retro/case.jpg">
+		<img src="/images/respberry-console-retro/case.jpg" alt="">
+	</a>
+	<!-- <figcaption>[item 1, item 2, [...].]</figcaption> -->
 </figure>
 
-<i class="fa fa-smile-o" aria-hidden="true"></i> *Estes itens são facilmente encontrados no mercado livre.*
+<div align="center">
+	<i class="fa fa-smile-o" aria-hidden="true"></i> Estes itens são facilmente encontrados no mercado 
+	livre.
+</div>
+<hr>
 
-Tudo pronto? Então siga as instruções a seguir.
+— Tudo pronto? Então siga as instruções a seguir.
 
 <h2 align="center">
 Passo a passo <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-gamepad" aria-hidden="true"></i></h2>
@@ -42,7 +60,12 @@ Utilize um software para formatar mídia, ex.: [SD Formatter](https://www.sdcard
 
 * Inicie o programa de formatação de cartão de memória e formate todo o cartão em FAT32;
 * Extraia o conteúdo do arquivo baixado diretamente na raiz do seu cartão de memória;
-* Monte o case no seu Raspberry (opcional);
+* (Opcional )Monte o case no seu Raspberry; 
+**Atenção:** caso possua cooler, ligue nos pinos certos (04 e 06):
+<figure class="center">
+	<img src="/images/respberry-console-retro/pi3_gpio.jpg" alt="">
+	<img src="/images/respberry-console-retro/how-to-connect-to-gpio.jpg" alt="">
+</figure>
 * Encaixe o cartão de memória no Raspberry Pi, conecte o cabo HDMI e a fonte de energia;
 * A instalação se iniciará e voce terá um recalbox rodando em alguns minutos.
 
@@ -59,7 +82,7 @@ Caso possua um controle USB de PS3 ou Xbox 360, tudo que você precisa fazer é 
 
 Se for utilizar outro joystick USB, [lista de compatibilidade aqui](https://github.com/recalbox/recalbox-os/wiki/Periféricos-Compatíveis-(PT)), siga as instruções abaixo:
 
-Depois de plugar seu controle USB ou parear seu controle Bluetooth, aperte o START com um controle já configurado ou (ou ENTER no teclado) e selecione a opção `Configure Input / Configuração de controles` e siga as instruções.
+Depois de plugar seu controle USB ou parear seu controle Bluetooth (necessário adaptador Bluetooth), aperte o START com um controle já configurado ou (ou ENTER no teclado) e selecione a opção `Configure Input / Configuração de controles` e siga as instruções.
 
 O último botão, o **HOTKEY** é um botão que ativará combinações com outros botões. É recomendado utilizar o L3 (para controles com analógico) ou o botão SELECT.
 
