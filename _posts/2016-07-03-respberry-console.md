@@ -47,6 +47,8 @@ Está afim de jogar jogos antigos? Neste post irei demostrar como criar um conso
 
 — Tudo pronto? Então siga as instruções a seguir.
 
+<!-- more -->
+
 <h2 align="center">
 Passo a passo <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-gamepad" aria-hidden="true"></i></h2>
 
