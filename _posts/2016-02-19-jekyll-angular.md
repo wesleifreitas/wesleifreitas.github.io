@@ -19,6 +19,8 @@ O desafio <del>problema</del> é que ambos utilizam as **\{\{ chaves }}** em sua
 
 Para resolver o 'conflito', você deverá implementar o **$interpolateProvider** (AngularJS) e trocar o uso das chaves por outros caracteres, por exemplo **<span ng-controller="PostCtrl"><strong>[[jekyllAngular.colchetes]]</strong></span>** — Veja a seguir.
 
+<!-- more -->
+
 {% highlight javascript %}
 var myAngularApp = angular.module('myAngularApp', [], function() {});
 
