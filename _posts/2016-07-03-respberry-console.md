@@ -105,7 +105,9 @@ Volte para a tela de configuração, atribua o controle para um jogador. Pronto,
 Conecte o Raspberry a sua rede local (Utilize o cabo ou configure o WIFI no recalboxOS).
 Depois em seu computador, acesse Redes no Windows Explorer e selecione o Recalbox ou digite `\\RECALBOX` na barra de endereço.
 
-[IMG]
+<figure class="center">
+	<img src="/images/respberry-console-retro/share.jpg" alt="">
+</figure>
 
 
 *Nota: Você pode verificar o IP nas opções de rede no recalboxOS e acessar por ele, por exemplo `\\192.168.1.10`.*
@@ -119,7 +121,9 @@ Depois abra a pasta `share`, em seguida `roms`. Por fim, cole seus jogos na past
 
 Veja como ficou o meu console retrô a seguir.
 
-[IMG]
+<figure class="center">
+	<img src="/images/respberry-console-retro/meu-console-retro-q80.jpg" alt="">
+</figure>
 
 **Obs.:** Eu configurei minha rede WIFI direto no arquivo **recalbox/share/system/recalbox.conf**, não esqueça de remover o `;` do início da linha alterada:
 <div>
