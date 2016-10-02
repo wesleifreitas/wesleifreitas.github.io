@@ -69,7 +69,7 @@ Utilize um software para formatar mídia, ex.: [SD Formatter](https://www.sdcard
 	<img src="/images/respberry-console-retro/how-to-connect-to-gpio.jpg" alt="">
 </figure>
 * Encaixe o cartão de memória no Raspberry Pi, conecte o cabo HDMI e a fonte de energia;
-* A instalação se iniciará e voce terá um recalbox rodando em alguns minutos.
+* A instalação será iniciada e você terá um recalbox rodando em alguns minutos.
 
 Quando iniciar o Recalbox você deverá ver sua interface gráfica:
 
