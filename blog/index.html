@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: post
 title: "Weslão Blog"
 description: "Describe this nonsense."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
@@ -52,7 +52,7 @@ comments: false
   </header>
   <div class="entry-content">
     {% if post.content contains "<!-- more -->" %}
-    {{ post.content | split:"<!-- more -->" | first % }}
+    {{ post.content | split:"<!-- more -->" | first }}
         <div align="center">
             <div markdown="0">
               <a href="{{ site.url }}{{ post.url }}" class="btn btn-info">
@@ -67,37 +67,5 @@ comments: false
 </article><!-- /.hentry -->
 {% endfor %}
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="{{ site.url }}/blog" class="btn">Anterior</a>
-    {% else %}
-      <a href="{{ site.url }}/blog/page{{ paginator.previous_page }}" class="btn">Anterior</a>
-    {% endif %}
-  {% else %}
-    Anterior
-  {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.url }}/blog">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.url }}/blog/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.next_page %}
-    <a href="{{ site.url }}/blog/page{{ paginator.next_page }}" class="btn">Próxima</a>
-  {% else %}
-    Próxima
-  {% endif %}
-</div><!-- /.pagination -->
+{% include pagination.html %}
+

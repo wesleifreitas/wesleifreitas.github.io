@@ -1,13 +1,16 @@
 title:            wesleifreitas.github.io
-description:      Describe your website here.
-disqus_shortname: wesleifreitas # put your disqus here
+description:      wesleifreitas.github.io
+
+# put your disqus here
+disqus_shortname: wesleifreitas
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
-profile_picture:  images/weslei.png
+excerpt_separator: <!--more-->
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-# url: http://aronbordin.com/neo-hpstr-jekyll-theme
+
+url: http://wesleifreitas.github.io
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -15,28 +18,26 @@ profile_picture:  images/weslei.png
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Sobre o autor'
+  - title: 'Home'
     url: '/'
   - title: 'Blog'
     url: '/blog'
- # - title: 'Blog'
- #   url: '/blog'
- # - title: 'Fork'
- #   url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
- # - title: 'Install'
- #   url: '/theme-setup/'
- # - title: 'Tags'
- #   url: '/tags'
- # - title: 'Categories'
- #   url: '/categories'
- #   type: 'categories'
- # - title: 'Favorites'
- #   url: '#'
- #   submenu:
- #     - title: 'Code Highlighter'
- #       url: '/intro/code-highlighting-post/'
- #     - title: 'Sample Post'
- #       url: '/intro/sample-post/'
+#  - title: 'Projetos'
+#    url: '/projetos'
+#  - title: 'Home'
+#    url: '/'
+#  - title: 'Tags'
+#    url: '/tags'
+#  - title: 'Categories'
+#    url: '/categories'
+#    type: 'categories'
+#  - title: 'Favorites'
+#    url: '#'
+#    submenu:
+#      - title: 'Code Highlighter'
+#        url: '/intro/code-highlighting-post/'
+#      - title: 'Sample Post'
+#        url: '/intro/sample-post/'
 
 # Owner/author information
 owner:
@@ -46,25 +47,24 @@ owner:
   bio:            "<p>Olá! Sou Full-Stack Developer, gosto de trabalhar em equipe e aprender novas tecnologias.<p/><p><a href='/'>Mais sobre o autor...</a><p>"
   bio_about:      "<p>Olá! Sou Full-Stack Developer, gosto de trabalhar em equipe e aprender novas tecnologias.</p><p><a href='/blog'>Blog</a></p>"
   email:          weslei.rfreitas@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
+  # Twitter nick for use in Twitter cards and follow button.
   twitter: weslei_rfreitas # if no twitter in this config, the twitter follow button will be removed
-  facebook:
+  # GitHub nick for use in follow button in author block.
   github: wesleifreitas
-  stackexchange:
-  linkedin:
-  instagram:
-  flickr:
-  tumblr:
-  # google plus id, include the '+', eg +AronBordin
-  #google_plus:    +yourid
 
+# Twitter account associated with the site if different from owner/author twitter account.
+# Used in Twitter cards.
+twitter:
+
+# Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
     url: "https://github.com/wesleifreitas"
   - title: "linkedin"
     url: "https://br.linkedin.com/in/wesleifreitas"
- # - title: "youtube"
- #   url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+#  - title: "youtube"
+#    url: "https://www.youtube.com/channel/"
+
 # Background image to be tiled on all pages
 background:
 
@@ -76,11 +76,10 @@ bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Sao_Paulo
+locale:      pt_BR
 future:      true
 highlighter: rouge
 markdown:    kramdown
-gems:
-  - jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
@@ -95,20 +94,17 @@ paginate_path: "/blog/page:num"
 # if true, shows the floatting share buttons
 float_share: true
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 gems: [jekyll-paginate]
+#theme: neo-hpstr-jekyll-theme
